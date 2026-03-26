@@ -1,0 +1,57 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Editor / IDE
+.idea/
+*.swp
+*~
+
+# Ad hoc cluster / interactive job logs
+interactive_job.out
+interactive_job.err
+
+# nano4M training outputs (checkpoints, weights — large)
+nano4M/outputs/
+nano4M/wandb/
+
+# Downloaded / generated datasets & retrieval tensors (re-fetch via tutorials)
+PyTorch_Tutorial/exercises/data/
+4M_Tutorial/retrieval_data/
+
+# torchvision-style dataset folders if created outside the paths above
+**/FashionMNIST/
+**/MNIST/
+**/EMNIST/
+**/CIFAR10/
+**/CIFAR100/
+
+# Hugging Face / HF datasets cache if stored inside the repo
+**/.cache/huggingface/
